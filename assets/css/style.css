@@ -1,0 +1,284 @@
+/* ----DEFAULT ELEMENT STYLING START---- */
+html {
+    /* Positioning */
+    position: relative;
+  
+    /* Box-model */
+    min-height: 100%;
+  }
+  
+  body {
+    /* Positioning */
+    margin-bottom: 150px;
+  
+    /* Typography */
+    font-family: Arial, Helvetica, sans-serif;
+  
+    /* Visual */
+    background-color: #aaacaf;
+  }
+  
+  /* Media query for body */
+  @media only screen and (max-width: 767px) {
+
+    body {
+      /* Visual */
+      background-color: #637982;
+    }
+
+  }
+  
+  hr.stroke{
+    border-top: 2pt solid #0b7570;
+  }
+
+  /* ----DEFAULT ELEMENT STYLING END---- */
+  
+  /* ----NAV START---- */
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 25px;
+  }
+
+  .navbar-custom {
+    background-color: #233036;
+  }
+  
+  #logo {
+    /* Box-model */
+    height: 75px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    /* Positioning */
+    margin-left: 60px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  
+    /* Typography */
+    font-size: 18pt;
+    color:whitesmoke;
+  
+    /* Visual */
+    background: #0b7570;
+  }
+  
+  /* Logo hover state */
+  #logo:hover {
+    /* Visual */
+    opacity: 0.7;
+  }
+  
+  .navbar-right-custom {
+    /* Box-model */
+    padding-top: 20px;
+    padding-right: 20px;
+  
+    /* Typography */
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    color: whitesmoke;
+  }
+
+  /* Nav element hover state */
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #0bbd64;
+  }
+  
+  /* Media query for nav */
+  @media only screen and (max-width: 767px) {
+    .navbar-header {
+      background-color: #233035;
+    }
+  
+    #logo {
+      width: 100%;
+  
+      /* Box-model */
+      height: 60px;
+      padding-top: 20px;
+      padding-bottom: 5px;
+  
+      /* Positioning */
+      margin-left: 0;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+  
+      /* Typography */
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+  
+      /* Visual */
+      background: #233035;
+    }
+
+  }
+  
+  /* -----NAV END---- */
+
+  /* -----TABLE START---- */
+  .table-background{
+    /* padding: 30px; */
+    background-color: #f1f1f1;
+
+  }
+
+  .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #c5d1d6;
+  }
+
+  /* -----TABLE END---- */
+  
+  /* ----DESCRIPTION START---- */
+  .description-header {
+    /* Positioning */
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+  
+    /* Typography */
+    font-size: 45pt;
+    font-weight: bold;
+    color: #0b7570;
+    text-align: center;
+  }
+  
+  .description-content {
+    /* Box-model */
+    padding: 30px;
+  
+    /* Positioning */
+    margin-top: 32px;
+  
+    /* Visual */
+    background-color: #e1e5ea;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .description-content > p {
+    /* Box-model */
+    padding-top: 20px;
+  
+    /* Typography */
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    color: rgb(49, 58, 66);
+  }
+  
+  .description-text {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #description-image {
+    /* Positioning */
+    float: center;
+  
+    /* Box-model */
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  /* Description content media query */
+  @media only screen and (max-width: 767px) {
+    /* override default class styling for positioning/padding */
+  
+    .description-content {
+      /* Box-model */
+      padding: 10;
+  
+      /* Positioning */
+      margin-top: 0;
+    }
+  }
+  
+  /* ----DESCRIPTION END---- */
+  
+  /* ----IMAGE NAV START---- */
+  #imageNav-area {
+    width: 100%;
+  
+    /* Box-model */
+    padding: 30px 30px 43px;
+  
+    /* Positioning */
+    margin-top: 32px;
+  
+    /* Visual */
+    background-color: #e1e5ea;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .imageNav-header {
+    /* Positioning */
+    margin-bottom: 15px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  
+    /* Typography */
+    font-size: 16pt;
+    font-weight: bold;
+    color: #0b7570;
+    text-align: center;
+  }
+  
+  .imageNav-photo {
+    width: auto;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  
+    /* Box-model */
+    height: 140px;
+  }
+  
+  .imageNav-photo:hover {
+    /* Visuals */
+    opacity: 0.6;
+  }
+  
+  #images {
+    /* Box-model */
+    padding-top: 10px;
+  
+    /* Typography */
+    text-align: center;
+  }
+
+  .img-wrap {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ----IMAGE NAV END---- */
+  
+  /* ----COMPARISON START---- */
+  .comparison-image:hover {
+    opacity: 0.6;
+  }
+  
+  .comparison-header {
+    /* Positioning */
+    margin-bottom: 10px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  
+    /* Typography */
+    font-size: 16pt;
+    font-weight: bold;
+    color: #0b7570;
+    text-align: center;
+  }
+  
+  /* ----COMPARISON END---- */
+  
+  
