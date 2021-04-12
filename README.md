@@ -1,8 +1,8 @@
-# Weather Trends Dashbaord
+# Weather Trends Dashboard
 
 # Prompt
 
-Create a visualization dashboard for weather trends realated to latitude and longitude. Deploy the dashboard to github pages. Ensure that the dashboard can function on mobile displays.
+Create a visualization dashboard for weather trends related to latitude and longitude. Deploy the dashboard to GitHub pages. Ensure that the dashboard can function on mobile displays.
 
 *Note: The focus of this project was web design so images and weather data were provided.  
 Visit https://github.com/NPVoravong/weather-trends to see an example of how I created my own weather data and charts.*
@@ -11,7 +11,7 @@ Visit https://github.com/NPVoravong/weather-trends to see an example of how I cr
 - HTML
 - Bootstrap
 - CSS
-- Github Pages
+- GitHub Pages
 - Jupyter Notebook
 - Pandas
 
@@ -19,7 +19,7 @@ Visit https://github.com/NPVoravong/weather-trends to see an example of how I cr
 
   1. Initial Setup and Schematic Design
 
-     The landing page for the dashboard will be the `index.html`. Bootsrap will be used to arrange the page elements. The CSS for bootsrap needs to be referneced in the head and the script needs to be referenced in the body. Another CSS file `style.css` is used to handle to the asthetics of the dashboard.
+     The landing page for the dashboard will be the `index.html`. Bootstrap will be used to arrange the page elements. The CSS for bootstrap needs to be referenced in the head and the script needs to be referenced in the body. Another CSS file `style.css` is used to handle to the aesthetics of the dashboard.
   
      The dashboard will be comprised of the following pages:
       - Plots
@@ -56,7 +56,7 @@ Visit https://github.com/NPVoravong/weather-trends to see an example of how I cr
      
      <img src="assets/images/navbar.png" height="auto">
      
-     The logo on the left gives the page some branding. An anchor tag is added to the button which allows a user to return to the homepage by clicking on the logo. The styling for the bar and logo are handled in `style.css`
+     The logo on the left gives the page some branding. An anchor tag is added to the button which allows a user to return to the homepage by clicking on the logo. The styling for the bar and logo is handled in `style.css`
      
      ```
      
@@ -89,7 +89,7 @@ Visit https://github.com/NPVoravong/weather-trends to see an example of how I cr
      ```
      <ul class="nav navbar-nav navbar-right navbar-right-custom">
      ```
-     The plots page is made up of four different html files. Like the logo, the page links are within an anchor tag to make them clickable. Adding dropdown functionality will make all four weather visualizations accesssible from the navbar. The dropdown-toggle class adds this feature. An unordered list is used to populate the dropdown menu. 
+     The plots page is made up of four different html files. Like the logo, the page links are within an anchor tag to make them clickable. Adding dropdown functionality will make all four weather visualizations accessible from the navbar. The dropdown-toggle class adds this feature. An unordered list is used to populate the dropdown menu. 
      ```
      <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
@@ -165,6 +165,6 @@ Visit https://github.com/NPVoravong/weather-trends to see an example of how I cr
             </tr>
      ```
      
-     It is important that the div for the table get placed inside another div that has the container class. This will give the table the same look and feel as the rest of the dashboard. To account for mobile screens the responive class is added to a div that wraps the entire table. If the class is just applied to the table tag it doesn't format properly.
+     It is important that the div for the table get placed inside another div that has the container class. This will give the table the same look and feel as the rest of the dashboard. To account for mobile screens the responsive class is added to a div that wraps the entire table. If the class is just applied to the table tag it doesn't format properly.
      
 # The final dashboard is available here https://npvoravong.github.io/latitude/
