@@ -28,7 +28,7 @@ Visit https://github.com/NPVoravong/weather-trends to see an example of how I cr
 
      A html file will be required for each of these pages.
      
-  2. Home Page
+  2. [Home Page](https://npvoravong.github.io/latitude/)
 
      The home page consists of two divs and a navbar.
 
@@ -102,7 +102,7 @@ Visit https://github.com/NPVoravong/weather-trends to see an example of how I cr
               </li>
      ```
 
-  4. Plots
+  4. [Plots](https://npvoravong.github.io/latitude/visualizations/temp.html)
 
      Each plot (cloudiness, humidity, temp, and wind) uses the same html template that includes the bootstrap, CSS references, main div, and sidebar div. Bootstrap is used to give the enlarged visualization nine columns with the side bar getting the remaining 3. I created a class in the CSS called `.img-wrap` to ensure the enlarged image always displays properly
      ```
@@ -128,22 +128,43 @@ Visit https://github.com/NPVoravong/weather-trends to see an example of how I cr
      
      <img src="assets/images/comparison.png" height="auto">
      
-  6. Data
+  6. [Data](https://npvoravong.github.io/latitude/data.html)
 
      The data page is where a user can see the raw information for all 546 cities in the dataset. For the purposes of this project the dataset was converted from a CSV to a html table using pandas.
      
+     <img src="assets/images/csv-to-html.png" height="auto">
      
+     The output of the pandas conversion in `data.html` as a table. Each city is a tr and the metadata for the cities is a td. Each column is labeled using a table header.
+     ```
+     <thead>
+            <tr style="text-align: center">
+              <th>City_ID</th>
+              <th>City</th>
+              <th>Cloudiness</th>
+              <th>Country</th>
+              <th>Date</th>
+              <th>Humidity</th>
+              <th>Lat</th>
+              <th>Lng</th>
+              <th>Max Temp</th>
+              <th>Wind Speed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>jacareacanga</td>
+              <td>0</td>
+              <td>BR</td>
+              <td>1528902000</td>
+              <td>62</td>
+              <td>-6.22</td>
+              <td>-57.76</td>
+              <td>89.60</td>
+              <td>6.93</td>
+            </tr>
+     ```
      
+     It is important that the div for the table get placed inside another div that has the container class. This will give the table the same look and feel as the rest of the dashboard. To account for mobile screens the responive class is added to a div that wraps the entire table. If the class is just applied to the table tag it doesn't format properly.
      
-     
-    
-     
-
-     
-     
-     
-
-     
-
-     
-     
+# The final dashboard is available here https://npvoravong.github.io/latitude/
